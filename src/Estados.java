@@ -110,7 +110,7 @@ public class Estados extends javax.swing.JFrame {
       String afRelativa=String.valueOf(afRel+"%");
       jTAFRel.setText(afRelativa);
       String fraseAFijo="";
-      /* Nomina Absoluta Pagos Anticipados
+      /* Nomina Absoluta Pagos Anticipadoshh
       */
   
    }
