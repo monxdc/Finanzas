@@ -112,20 +112,7 @@ public class Estados extends javax.swing.JFrame {
       String fraseAFijo="";
       /* Nomina Absoluta Pagos Anticipados
       */
-      
-      
-      
-      
-      
-      
-      
-       
-       
-           
-           
-           
-       
-       
+  
    }
     public Estados() {
         initComponents();
@@ -342,7 +329,7 @@ public class Estados extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(442, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -563,6 +550,12 @@ public class Estados extends javax.swing.JFrame {
         );
 
         jPanel49.setBackground(new java.awt.Color(255, 153, 102));
+
+        jTCajaAb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTCajaAbActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
         jPanel49.setLayout(jPanel49Layout);
@@ -945,6 +938,11 @@ public class Estados extends javax.swing.JFrame {
         jTInventarios2.setText("2");
 
         jTCaja1.setText("10");
+        jTCaja1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTCaja1ActionPerformed(evt);
+            }
+        });
 
         jTCaja2.setText("4");
 
@@ -1917,7 +1915,9 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1142, Short.MAX_VALUE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 964, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel16Layout.setVerticalGroup(
@@ -1925,17 +1925,20 @@ public class Estados extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1320, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1320, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
+
+        jScrollPane2.getAccessibleContext().setAccessibleDescription("");
+        jScrollPane2.getAccessibleContext().setAccessibleParent(jScrollPane2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1960,6 +1963,14 @@ public class Estados extends javax.swing.JFrame {
         // TODO add your handling code here:
         aumentos();
     }//GEN-LAST:event_jBAumentosActionPerformed
+
+    private void jTCajaAbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTCajaAbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTCajaAbActionPerformed
+
+    private void jTCaja1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTCaja1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTCaja1ActionPerformed
 
     /**
      * @param args the command line arguments
