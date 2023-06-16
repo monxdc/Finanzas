@@ -1,15 +1,7 @@
 
 import javax.swing.JTextField;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 
-/**
- *
- * @author Erick DC
- */
 public class EstadoDeResultados extends javax.swing.JFrame {
     double caja1, caja2, caja3, caja4, total;
     String imp;
@@ -106,198 +98,198 @@ public class EstadoDeResultados extends javax.swing.JFrame {
         total = caja1 - caja2 - caja3 - caja4;
         imp = String.valueOf(total);
         UN13.setText(imp);
-        //Porcientos integrales
-        //Porcientos integrales costo de ventas 2014
+        //Porcientos integrales 2014
+        double cajaa1, cajaa2,totaal;
         caja1 = Double.parseDouble(CV14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f", total);
-        PIVN14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PICV14.setText(imp+"%");
         //Porcientos integrales costo de ventas 2013
         caja1 = Double.parseDouble(CV13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f", total);
-        PIVN13.setText(imp + "%");
+       total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIVN13.setText(imp+"%");
         //Porcientos integrales margen bruto 2014
         caja1 = Double.parseDouble(MB14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f", total);
-        PIMB14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+     
+        PIMB14.setText(imp+"%");
         //Porcientos integrales margen bruto 2013
         caja1 = Double.parseDouble(MB13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
+        total = (caja1 / caja2) * 100;
         imp = String.format("%.2f", total);
-        PIMB13.setText(imp + "%");
+        PIMB13.setText(imp+"%");
         //Porcientos integrales gasto de ventas 2014
         caja1 = Double.parseDouble(GV14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIGV14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIGV14.setText(imp+"%");
         //Porcientos integrales gasto de ventas 2013
         caja1 = Double.parseDouble(GV13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIGV13.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIGV13.setText(imp+"%");
         //Porcientos integrales gasto de admon 2014
         caja1 = Double.parseDouble(GA14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIGA14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIGA14.setText(imp+"%" );
         //Porcientos integrales gasto de admon 2013
         caja1 = Double.parseDouble(GA13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIGA13.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIGA13.setText(imp+"%");
         //Porcientos integrales total gastos de operacion 2014
         caja1 = Double.parseDouble(TGO14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PITGO14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PITGO14.setText(imp+"%");
         //Porcientos integrales total gastos de operacion 2013
         caja1 = Double.parseDouble(TGO13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PITGO13.setText(imp + "%");
+      total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PITGO13.setText(imp+"%");
         //Porcientos integrales margen de operacion 2014
         caja1 = Double.parseDouble(MO14.getText());
-        caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIMO14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIMO14.setText(imp+"%");
         //Porcientos integrales margen de operacion 2013
         caja1 = Double.parseDouble(MO13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PIMO13.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PIMO13.setText(imp+"%");
         //Porcientos integrales costo integral de finan 2014
         caja1 = Double.parseDouble(CIF14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
-        PICIF14.setText(imp + "%");
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
+        PICIF14.setText(imp+"%");
         //Porcientos integrales costo integral de finan 2013
         caja1 = Double.parseDouble(CIF13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+      total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PICIF13.setText(imp + "%");
         //Porcientos integrales intereses 2014
         caja1 = Double.parseDouble(I14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PII14.setText(imp + "%");
         //Porcientos integralesintereses 2013
         caja1 = Double.parseDouble(I13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PII13.setText(imp + "%");
         //Porcientos integrales utilidad perdida en cambios 2014
         caja1 = Double.parseDouble(UPC14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIUPC14.setText(imp + "%");
         //Porcientos integrales utilidad perdida en cambios 2013
         caja1 = Double.parseDouble(UPC13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIUPC13.setText(imp + "%");
         //Porcientos integrales repomo 2014
         caja1 = Double.parseDouble(R14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIR14.setText(imp + "%");
         //Porcientos integrales repomo 2013
         caja1 = Double.parseDouble(R13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+        total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIR13.setText(imp + "%");
         //Porcientos integrales total de cfi 2014
         caja1 = Double.parseDouble(TCFI14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PITCFI14.setText(imp + "%");
         //Porcientos integrales total de cfi 2013
         caja1 = Double.parseDouble(TCFI13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PITCFI13.setText(imp + "%");
         //Porcientos integrales MARGEN ANTES DE I.S.R. Y P.T.U. 2014
         caja1 = Double.parseDouble(MADISRYPTU14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIMADISRYPTU14.setText(imp + "%");
         //Porcientos integrales MARGEN ANTES DE I.S.R. Y P.T.U. 2013
         caja1 = Double.parseDouble(MADISRYPTU13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIMADISRYPTU13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA I.S.R. 2014
         caja1 = Double.parseDouble(PPISR14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPISR14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA I.S.R. 2013
         caja1 = Double.parseDouble(PPISR13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPISR13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA P.T.U. 2014
         caja1 = Double.parseDouble(PPTU14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPPTU14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA P.T.U. 2013
         caja1 = Double.parseDouble(PPTU13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPPTU13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA IMPAC. 2014
         caja1 = Double.parseDouble(PPIMPAC14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPIMPAC14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA IMPAC. 2013
         caja1 = Double.parseDouble(PPIMPAC13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIPPIMPAC13.setText(imp + "%");
         //Porcientos integrales utilidad neta 2014
         caja1 = Double.parseDouble(UN14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIUN14.setText(imp + "%");
         //Porcientos integrales utilidad neta 2013
         caja1 = Double.parseDouble(UN13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = (caja2 / caja1)*100;
-        imp = String.format("%.2f",total);
+         total = (caja1 / caja2)*100;
+         imp = String.format("%.2f", total);
         PIUN13.setText(imp + "%");
     }
 
@@ -494,12 +486,13 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jBAumentos))
                     .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
         );
 
         jScrollPane2.setBackground(new java.awt.Color(255, 51, 0));
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane2.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane2.setPreferredSize(new java.awt.Dimension(1219, 2426));
 
@@ -862,11 +855,18 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        CV14.setText("20170");
+
+        CV13.setText("18721.50");
+
+        VN14.setText("37538");
         VN14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VN14ActionPerformed(evt);
             }
         });
+
+        VN13.setText("23898");
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);
@@ -979,6 +979,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        GV14.setText("5468");
+
+        GV13.setText("1599");
+
         jLabel7.setText("Gastos de admon");
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -995,11 +999,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
         );
 
         GA14.setBackground(new java.awt.Color(242, 242, 242));
+        GA14.setText("5000");
         GA14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GA14ActionPerformed(evt);
             }
         });
+
+        GA13.setText("1350");
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -1031,13 +1038,13 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                         .addComponent(GV14)
                         .addComponent(GV13))
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel41Layout.createSequentialGroup()
                         .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(GA13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(GA14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 10, Short.MAX_VALUE))
+                        .addGap(0, 14, Short.MAX_VALUE))
                     .addComponent(jPanel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -1115,11 +1122,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        CIF14.setText("0");
         CIF14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CIF14ActionPerformed(evt);
             }
         });
+
+        CIF13.setText("0");
 
         jLabel11.setText("Intereses ");
 
@@ -1140,6 +1150,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        I14.setText("3554");
+
+        I13.setText("1764");
+
         jLabel15.setText("Utilidad (perdida) en cambios ");
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
@@ -1157,6 +1171,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addComponent(jLabel15)
                 .addContainerGap(7, Short.MAX_VALUE))
         );
+
+        UPC14.setText("0");
+
+        UPC13.setText("0");
 
         jLabel16.setText("Repomo");
 
@@ -1176,6 +1194,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addComponent(jLabel16)
                 .addContainerGap(10, Short.MAX_VALUE))
         );
+
+        R14.setText("270");
+
+        R13.setText("480");
 
         javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
         jPanel38.setLayout(jPanel38Layout);
@@ -1261,6 +1283,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        PPISR14.setText("850");
+
+        PPISR13.setText("225");
+
         jLabel24.setText("PROVISION PARA P.T.U.");
 
         javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
@@ -1280,6 +1306,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        PPTU14.setText("280");
+
+        PPTU13.setText("127.50");
+
         jLabel25.setText("PROVISION PARA IMPAC");
 
         javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
@@ -1298,6 +1328,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addComponent(jLabel25)
                 .addContainerGap())
         );
+
+        PPIMPAC14.setText("330");
+
+        PPIMPAC13.setText("210");
 
         javax.swing.GroupLayout PPPTU14Layout = new javax.swing.GroupLayout(PPPTU14);
         PPPTU14.setLayout(PPPTU14Layout);
@@ -1770,7 +1804,7 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1857,8 +1891,9 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                         .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
@@ -1925,8 +1960,8 @@ public class EstadoDeResultados extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(830, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1168, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jScrollPane2.getAccessibleContext().setAccessibleParent(jScrollPane2);

@@ -70,8 +70,8 @@
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" pref="560" max="-2" attributes="0"/>
-                  <EmptySpace pref="830" max="32767" attributes="0"/>
+                  <Component id="jScrollPane2" pref="1168" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -109,7 +109,7 @@
                           </Group>
                           <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -142,6 +142,7 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="33" red="ff" type="rgb"/>
             </Property>
+            <Property name="verticalScrollBarPolicy" type="int" value="22"/>
             <Property name="viewportBorder" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder/>
@@ -201,7 +202,7 @@
                                               <Component id="jPanel57" min="-2" max="-2" attributes="0"/>
                                               <Component id="jPanel66" min="-2" pref="261" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace pref="91" max="32767" attributes="0"/>
+                                          <EmptySpace pref="101" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -319,8 +320,9 @@
                                   <Component id="jPanel39" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jPanel40" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jPanel41" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -1010,15 +1012,27 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="CV14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="20170"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="CV13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="18721.50"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="VN14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="37538"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VN14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="VN13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="23898"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1147,14 +1161,14 @@
                                   </Group>
                                   <Component id="jPanel14" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="10" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="GA13" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
                                           <Component id="GA14" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="jPanel19" alignment="1" max="32767" attributes="0"/>
                               </Group>
@@ -1195,8 +1209,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="GV14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="5468"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="GV13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="1599"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel19">
 
@@ -1228,12 +1248,16 @@
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="f2" green="f2" red="f2" type="rgb"/>
                         </Property>
+                        <Property name="text" type="java.lang.String" value="5000"/>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GA14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="GA13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="1350"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1441,11 +1465,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="CIF14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="0"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CIF14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="CIF13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="0"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel22">
 
@@ -1478,8 +1508,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="I14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="3554"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="I13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="1764"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel23">
 
@@ -1511,8 +1547,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="UPC14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="0"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="UPC13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="0"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel24">
 
@@ -1545,8 +1587,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="R14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="270"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="R13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="480"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1669,8 +1717,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="PPISR14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="850"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="PPISR13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="225"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel34">
 
@@ -1703,8 +1757,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="PPTU14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="280"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="PPTU13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="127.50"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel35">
 
@@ -1737,8 +1797,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="PPIMPAC14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="330"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="PPIMPAC13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="210"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
