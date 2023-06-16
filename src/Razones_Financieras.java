@@ -23,8 +23,7 @@ double caja1, caja2, caja3, caja4, total;
         double tcc1,tcc2, tcc3, dias;
         tcc1=Double.parseDouble(estados.jTTotalCirc1.getText());
         tcc2=Double.parseDouble(estados.TPC1.getText());
-        //caja1 = estados.jTTotalCirc1.setText(imp);
-       // caja2 = estados.getTPC1();
+       
         total = tcc1 / tcc2;
         imp = String.format("%.2f",total);
         LC14.setText(imp);
@@ -47,13 +46,13 @@ double caja1, caja2, caja3, caja4, total;
         tcc2=Double.parseDouble(estados.PT1.getText());
         total = tcc2 / tcc1;
         imp = String.format("%.2f",total);
-        PCC14.setText(imp);
+        DAT14.setText(imp);
         //Cobertura de intereses
         tcc1=Double.parseDouble(resultados.MADISRYPTU14.getText());
         tcc2=Double.parseDouble(resultados.I14.getText());
         total = tcc1 / tcc2;
         imp = String.format("%.2f",total);
-        CLP14.setText(imp);
+        CI14.setText(imp);
          //Rotacion de inventarios
         tcc1=Double.parseDouble(resultados.CV14.getText());
         tcc2=Double.parseDouble(estados.jTInventarios1.getText());
@@ -67,13 +66,147 @@ double caja1, caja2, caja3, caja4, total;
         RID14.setText(imp);
    
              //Rotacion de CXC
-        tcc1=Double.parseDouble(resultados.CV14.getText());
-        tcc2=Double.parseDouble(estados.jTInventarios1.getText());
+        tcc1=Double.parseDouble(resultados.VN14.getText());
+        tcc2=Double.parseDouble(estados.jTClientes1.getText());
         total = tcc1 / tcc2;
         imp = String.format("%.2f",total);
-        RI14.setText(imp);
+        RCPC14.setText(imp);
+        d=(dias/365);
+        imp=String.format("%.2f",d);
+        RCPCD14.setText(imp);
+         //Rotacion de CXP CV/TPC
+        tcc1=Double.parseDouble(resultados.CV14.getText());
+        tcc2=Double.parseDouble(estados.TPC1.getText());
+        total = tcc1 / tcc2;
+        imp = String.format("%.2f",total);
+        RCP14.setText(imp);
+        d=(dias/365);
+        imp=String.format("%.2f",d);
+        RCPD14.setText(imp);
+        //PROMEDIO DE COBRO
+        tcc1=Double.parseDouble(resultados.VN14.getText());
+        tcc2=Double.parseDouble(estados.jTClientes1.getText());
+        total = (tcc1 / tcc2)*365;
+        imp = String.format("%.2f",total);
+        PC14.setText(imp);
+         //PROMEDIO DE PAGO
+        tcc1=Double.parseDouble(estados.jTTotalCirc1.getText());
+        tcc2=Double.parseDouble(resultados.CV14.getText());
+        total = (tcc1/tcc2)*365;
+        imp = String.format("%.2f",total);
+        PP14.setText(imp);
+          //ROTACION DE ACTIVOS
+        tcc1=Double.parseDouble(resultados.VN14.getText());
+        tcc2=Double.parseDouble(estados.jTPlanta1.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        RA14.setText(imp);
+           //ROTACION DE ACTIVOS TOTALES
+        tcc1=Double.parseDouble(estados.jTAT1.getText());
+        tcc2=Double.parseDouble(estados.PT1.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        IE14.setText(imp);
+                  //ROTACION DE INDICE DE ENDEUDAMIENTO
+        tcc1=Double.parseDouble(resultados.VN14.getText());
+        tcc2=Double.parseDouble(estados.jTAT1.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        RAT14.setText(imp);
+        /* 2013 */
         
+        tcc1=Double.parseDouble(estados.jTTotalCirc1.getText());
+        tcc2=Double.parseDouble(estados.TPC1.getText());
+       
+        total = tcc1 / tcc2;
+        imp= String.format("%.2f",total);
+        LC13.setText(imp);
+        //prueba acida
+        tcc1=Double.parseDouble(estados.jTTotalCir2.getText());
+        tcc2=Double.parseDouble(estados.jTInventarios2.getText());
+        tcc3=Double.parseDouble(estados.TPC2.getText());
+        total = (tcc1 - tcc2)/tcc3;
+        imp = String.format("%.2f",total);
+        PA13.setText(imp);
+        //pasiva a capital contable
+        tcc1=Double.parseDouble(estados.PT2.getText());
+        tcc2=Double.parseDouble(estados.TPC2.getText());
+        total = tcc1 / tcc2;
+        imp = String.format("%.2f",total);
+        PCC13.setText(imp);
+        //Capitalizacion a largo plazo
+        //deuda activo total   
+        tcc1=Double.parseDouble(estados.jAT2.getText());
+        tcc2=Double.parseDouble(estados.PT2.getText());
+        total = tcc2 / tcc1;
+        imp = String.format("%.2f",total);
+        DAT13.setText(imp);
+        //Cobertura de intereses
+        tcc1=Double.parseDouble(resultados.MADISRYPTU13.getText());
+        tcc2=Double.parseDouble(resultados.I13.getText());
+        total = tcc1 / tcc2;
+        imp = String.format("%.2f",total);
+        CI13.setText(imp);
+         //Rotacion de inventarios
+        tcc1=Double.parseDouble(resultados.CV13.getText());
+        tcc2=Double.parseDouble(estados.jTInventarios2.getText());
+        total = tcc1 / tcc2;
         
+        dias=Double.valueOf(total);
+        imp = String.format("%.2f",total);
+        RI13.setText(imp);
+        d=(dias/365);
+        imp=String.format("%.2f",d);
+        RID13.setText(imp);
+   
+             //Rotacion de CXC
+        tcc1=Double.parseDouble(resultados.VN13.getText());
+        tcc2=Double.parseDouble(estados.jTClientes2.getText());
+        total = tcc1 / tcc2;
+        imp = String.format("%.2f",total);
+        RCPC13.setText(imp);
+        d=(dias/365);
+        imp=String.format("%.2f",d);
+        RCPCD13.setText(imp);
+         //Rotacion de CXP CV/TPC
+        tcc1=Double.parseDouble(resultados.CV13.getText());
+        tcc2=Double.parseDouble(estados.TPC2.getText());
+        total = tcc1 / tcc2;
+        imp = String.format("%.2f",total);
+        RCP13.setText(imp);
+        d=(365/dias);
+        imp=String.format("%.2f",d);
+        RCPD13.setText(imp);
+        //PROMEDIO DE COBRO
+        tcc1=Double.parseDouble(resultados.VN13.getText());
+        tcc2=Double.parseDouble(estados.jTClientes2.getText());
+        total = (tcc1 / tcc2)*365;
+        imp = String.format("%.2f",total);
+        PC13.setText(imp);
+         //PROMEDIO DE PAGO
+        tcc1=Double.parseDouble(estados.TPC2.getText());
+        tcc2=Double.parseDouble(resultados.CV13.getText());
+        total = (tcc1/tcc2)*365;
+        imp = String.format("%.2f",total);
+        PP13.setText(imp);
+          //ROTACION DE ACTIVOS
+        tcc1=Double.parseDouble(resultados.VN13.getText());
+        tcc2=Double.parseDouble(estados.jPlanta2.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        RA13.setText(imp);
+           //ROTACION DE ACTIVOS TOTALES
+        tcc1=Double.parseDouble(resultados.VN13.getText());
+        tcc2=Double.parseDouble(estados.jAT2.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        RAT13.setText(imp);
+                  //ROTACION DE INDICE DE ENDEUDAMIENTO
+        tcc1=Double.parseDouble(resultados.VN13.getText());
+        tcc2=Double.parseDouble(estados.PT2.getText());
+        total = (tcc1/tcc2);
+        imp = String.format("%.2f",total);
+        IE13.setText(imp);
     }
 
     /**

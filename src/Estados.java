@@ -355,6 +355,7 @@ public class Estados extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jBAumentos = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -605,6 +606,13 @@ public class Estados extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("RF");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -614,21 +622,26 @@ public class Estados extends javax.swing.JFrame {
                 .addComponent(jBAumentos)
                 .addGap(306, 306, 306)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(198, 198, 198)
+                        .addComponent(jButton1))
                     .addComponent(jLabel1))
-                .addContainerGap(554, Short.MAX_VALUE))
+                .addContainerGap(307, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jBAumentos))
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jBAumentos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(4, 4, 4)
+                .addComponent(jButton1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jScrollPane2.setBackground(new java.awt.Color(255, 51, 0));
@@ -1358,6 +1371,8 @@ public class Estados extends javax.swing.JFrame {
             }
         });
 
+        jTTotalCir2.setText("20");
+
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
         jPanel40Layout.setHorizontalGroup(
@@ -1490,6 +1505,10 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTAFijo1.setText("100");
+
+        jTAFijo2.setText("78");
+
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
         jPanel42Layout.setHorizontalGroup(
@@ -1590,9 +1609,17 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTAT1.setText("20");
         jTAT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTAT1ActionPerformed(evt);
+            }
+        });
+
+        jAT2.setText("30");
+        jAT2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jAT2ActionPerformed(evt);
             }
         });
 
@@ -1789,6 +1816,7 @@ public class Estados extends javax.swing.JFrame {
             }
         });
 
+        TPC2.setText("90");
         TPC2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TPC2ActionPerformed(evt);
@@ -1880,6 +1908,10 @@ public class Estados extends javax.swing.JFrame {
                 .addComponent(jLabel23)
                 .addContainerGap())
         );
+
+        PT1.setText("120");
+
+        PT2.setText("190");
 
         jLabel24.setText("CAPITAL SOCIAL");
 
@@ -2031,6 +2063,10 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        TCC1.setText("120");
+
+        TCC2.setText("30");
+
         jLabel28.setText("SUMA PASIVO MAS CAPITAL");
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
@@ -2048,6 +2084,10 @@ public class Estados extends javax.swing.JFrame {
                 .addComponent(jLabel28)
                 .addContainerGap())
         );
+
+        SPC1.setText("60");
+
+        SPC2.setText("50");
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
@@ -2752,6 +2792,21 @@ public class Estados extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TPC2ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        EstadoDeResultados e = new EstadoDeResultados();
+        e.setVisible(true);
+        this.setVisible(true);
+        Razones_Financieras r = new Razones_Financieras();
+        r.setVisible(true);
+        
+              
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jAT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAT2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jAT2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2811,7 +2866,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField PAB;
     private javax.swing.JTextField PEL;
     public javax.swing.JTextField PT1;
-    private javax.swing.JTextField PT2;
+    public javax.swing.JTextField PT2;
     private javax.swing.JTextField PTABS;
     private javax.swing.JTextField PTREL;
     private javax.swing.JTextField SMCREL;
@@ -2823,7 +2878,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField TCCABS;
     private javax.swing.JTextField TCCREL;
     public javax.swing.JTextField TPC1;
-    private javax.swing.JTextField TPC2;
+    public javax.swing.JTextField TPC2;
     private javax.swing.JTextField TPCABS;
     private javax.swing.JTextField TPCREL;
     private javax.swing.JTextField UTA1;
@@ -2834,8 +2889,9 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField UTE2;
     private javax.swing.JTextField UTEABS;
     private javax.swing.JTextField UTEREL;
-    private javax.swing.JTextField jAT2;
+    public javax.swing.JTextField jAT2;
     private javax.swing.JButton jBAumentos;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2910,7 +2966,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
-    private javax.swing.JPanel jPanel45;
+    public javax.swing.JPanel jPanel45;
     private javax.swing.JPanel jPanel46;
     private javax.swing.JPanel jPanel47;
     private javax.swing.JPanel jPanel48;
@@ -2940,7 +2996,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel70;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JTextField jPlanta2;
+    public javax.swing.JTextField jPlanta2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTAFAbso;
     private javax.swing.JTextField jTAFAbso1;
@@ -2963,8 +3019,8 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTClienteAbsoluta1;
     private javax.swing.JTextField jTClienteRelativa;
     private javax.swing.JTextField jTClienteRelativa1;
-    private javax.swing.JTextField jTClientes1;
-    private javax.swing.JTextField jTClientes2;
+    public javax.swing.JTextField jTClientes1;
+    public javax.swing.JTextField jTClientes2;
     private javax.swing.JTextField jTDep1;
     private javax.swing.JTextField jTDep2;
     private javax.swing.JTextField jTDepAbso;
@@ -2972,7 +3028,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTDepRel;
     private javax.swing.JTextField jTDepRel1;
     public javax.swing.JTextField jTInventarios1;
-    private javax.swing.JTextField jTInventarios2;
+    public javax.swing.JTextField jTInventarios2;
     private javax.swing.JTextField jTInventariosAbso;
     private javax.swing.JTextField jTInventariosAbso1;
     private javax.swing.JTextField jTInventariosRel;
@@ -2983,7 +3039,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTPAP1;
     private javax.swing.JTextField jTPAP2;
     private javax.swing.JTextField jTPAREL;
-    private javax.swing.JTextField jTPlanta1;
+    public javax.swing.JTextField jTPlanta1;
     private javax.swing.JTextField jTPlantaAbso;
     private javax.swing.JTextField jTPlantaAbso1;
     private javax.swing.JTextField jTPlantaRel;
@@ -2992,7 +3048,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTTCAbso1;
     private javax.swing.JTextField jTTCRel;
     private javax.swing.JTextField jTTCRel1;
-    private javax.swing.JTextField jTTotalCir2;
+    public javax.swing.JTextField jTTotalCir2;
     public javax.swing.JTextField jTTotalCirc1;
     private javax.swing.JTextField jTextField100;
     private javax.swing.JTextField jTextField29;

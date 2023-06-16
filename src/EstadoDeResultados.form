@@ -1015,6 +1015,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="20170"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CV14ActionPerformed"/>
+                      </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                       </AuxValues>
@@ -1023,6 +1026,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="18721.50"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="VN14">
                       <Properties>
@@ -1031,11 +1037,17 @@
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VN14ActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="VN13">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="23898"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1112,11 +1124,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="MB14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="1882"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MB14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="MB13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="8282"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1338,8 +1356,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="MO14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="102"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="MO13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="129"/>
+                      </Properties>
                       <AccessibilityProperties>
                         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
                       </AccessibilityProperties>
@@ -1522,6 +1546,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="1764"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel23">
 
@@ -1887,11 +1914,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="TGO14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="1010"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TGO14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="TGO13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="20"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1968,11 +2001,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="TCFI14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="123"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TCFI14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="TCFI13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="182"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -2049,6 +2088,9 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="MADISRYPTU14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="100"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MADISRYPTU14ActionPerformed"/>
                       </Events>
@@ -2057,6 +2099,12 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="MADISRYPTU13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="180"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -2133,11 +2181,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="UN14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="120"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UN14ActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="UN13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="50"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>

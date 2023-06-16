@@ -89,26 +89,31 @@
                       <Component id="jBAumentos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="554" max="32767" attributes="0"/>
+                      <EmptySpace pref="307" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jBAumentos" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jBAumentos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -130,6 +135,14 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBAumentosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="RF"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1541,11 +1554,17 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="10856"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTClientes2">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="4744.50"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel17">
 
@@ -1589,6 +1608,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="5448"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTCaja1">
                       <Properties>
@@ -1689,6 +1711,12 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTTotalCir2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="20"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1782,11 +1810,17 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="14276"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jPlanta2">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="9573"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel19">
 
@@ -1908,8 +1942,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="jTAFijo1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="100"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jTAFijo2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="78"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -2129,6 +2169,9 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="jTAT1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="20"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTAT1ActionPerformed"/>
                       </Events>
@@ -2137,6 +2180,15 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="jAT2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="30"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jAT2ActionPerformed"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel22">
 
@@ -2305,6 +2357,9 @@
                       <Color blue="0" green="ff" red="66" type="rgb"/>
                     </Property>
                   </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
 
                   <Layout>
                     <DimensionLayout dim="0">
@@ -2406,9 +2461,15 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="TPC2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="90"/>
+                      </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TPC2ActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel32">
 
@@ -2571,11 +2632,20 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="PT1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="120"/>
+                      </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="PT2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="190"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel34">
 
@@ -2805,11 +2875,17 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="TCC1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="120"/>
+                      </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="TCC2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="30"/>
+                      </Properties>
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel47">
 
@@ -2841,8 +2917,14 @@
                       </SubComponents>
                     </Container>
                     <Component class="javax.swing.JTextField" name="SPC1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="60"/>
+                      </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="SPC2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="50"/>
+                      </Properties>
                     </Component>
                   </SubComponents>
                 </Container>

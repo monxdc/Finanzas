@@ -856,6 +856,11 @@ public class EstadoDeResultados extends javax.swing.JFrame {
         );
 
         CV14.setText("20170");
+        CV14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CV14ActionPerformed(evt);
+            }
+        });
 
         CV13.setText("18721.50");
 
@@ -928,11 +933,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        MB14.setText("1882");
         MB14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MB14ActionPerformed(evt);
             }
         });
+
+        MB13.setText("8282");
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -1071,6 +1079,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addComponent(jLabel8)
                 .addContainerGap())
         );
+
+        MO14.setText("102");
+
+        MO13.setText("129");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -1412,11 +1424,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        TGO14.setText("1010");
         TGO14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TGO14ActionPerformed(evt);
             }
         });
+
+        TGO13.setText("20");
 
         javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
         jPanel49.setLayout(jPanel49Layout);
@@ -1465,11 +1480,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        TCFI14.setText("123");
         TCFI14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TCFI14ActionPerformed(evt);
             }
         });
+
+        TCFI13.setText("182");
 
         javax.swing.GroupLayout jPanel54Layout = new javax.swing.GroupLayout(jPanel54);
         jPanel54.setLayout(jPanel54Layout);
@@ -1518,11 +1536,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        MADISRYPTU14.setText("100");
         MADISRYPTU14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MADISRYPTU14ActionPerformed(evt);
             }
         });
+
+        MADISRYPTU13.setText("180");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -1571,11 +1592,14 @@ public class EstadoDeResultados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        UN14.setText("120");
         UN14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UN14ActionPerformed(evt);
             }
         });
+
+        UN13.setText("50");
 
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
         jPanel63.setLayout(jPanel63Layout);
@@ -2052,6 +2076,10 @@ public class EstadoDeResultados extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_VN14ActionPerformed
 
+    private void CV14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CV14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CV14ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2090,15 +2118,15 @@ public class EstadoDeResultados extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CIF13;
     private javax.swing.JTextField CIF14;
-    private javax.swing.JTextField CV13;
+    public javax.swing.JTextField CV13;
     public javax.swing.JTextField CV14;
     private javax.swing.JTextField GA13;
     private javax.swing.JTextField GA14;
     private javax.swing.JTextField GV13;
     private javax.swing.JTextField GV14;
-    private javax.swing.JTextField I13;
+    public javax.swing.JTextField I13;
     public javax.swing.JTextField I14;
-    private javax.swing.JTextField MADISRYPTU13;
+    public javax.swing.JTextField MADISRYPTU13;
     public javax.swing.JTextField MADISRYPTU14;
     private javax.swing.JTextField MB13;
     private javax.swing.JTextField MB14;
@@ -2155,8 +2183,8 @@ public class EstadoDeResultados extends javax.swing.JFrame {
     private javax.swing.JTextField UN14;
     private javax.swing.JTextField UPC13;
     private javax.swing.JTextField UPC14;
-    private javax.swing.JTextField VN13;
-    private javax.swing.JTextField VN14;
+    public javax.swing.JTextField VN13;
+    public javax.swing.JTextField VN14;
     private javax.swing.JButton jBAumentos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
