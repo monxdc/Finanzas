@@ -1972,7 +1972,7 @@ public class EstadoDeResultados extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 23, Short.MAX_VALUE))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2091,15 +2091,15 @@ public class EstadoDeResultados extends javax.swing.JFrame {
     private javax.swing.JTextField CIF13;
     private javax.swing.JTextField CIF14;
     private javax.swing.JTextField CV13;
-    private javax.swing.JTextField CV14;
+    public javax.swing.JTextField CV14;
     private javax.swing.JTextField GA13;
     private javax.swing.JTextField GA14;
     private javax.swing.JTextField GV13;
     private javax.swing.JTextField GV14;
     private javax.swing.JTextField I13;
-    private javax.swing.JTextField I14;
+    public javax.swing.JTextField I14;
     private javax.swing.JTextField MADISRYPTU13;
-    private javax.swing.JTextField MADISRYPTU14;
+    public javax.swing.JTextField MADISRYPTU14;
     private javax.swing.JTextField MB13;
     private javax.swing.JTextField MB14;
     private javax.swing.JTextField MO13;

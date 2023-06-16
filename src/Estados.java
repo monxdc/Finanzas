@@ -2,6 +2,18 @@
 public class Estados extends javax.swing.JFrame {
     String imp;
     double periodo1,periodo2; 
+    private double jTTotalCirc1Value;
+    private double TPC1Value;
+
+    public double getJTTotalCirc1() {
+        return jTTotalCirc1Value;
+    }
+
+    public double getTPC1() {
+        return TPC1Value;
+    }
+
+    
 
    public void aumentos(){
        /*CAJA
@@ -1339,6 +1351,7 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTTotalCirc1.setText("2");
         jTTotalCirc1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTTotalCirc1ActionPerformed(evt);
@@ -1768,6 +1781,19 @@ public class Estados extends javax.swing.JFrame {
                 .addComponent(jLabel18)
                 .addContainerGap())
         );
+
+        TPC1.setText("10");
+        TPC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TPC1ActionPerformed(evt);
+            }
+        });
+
+        TPC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TPC2ActionPerformed(evt);
+            }
+        });
 
         jLabel22.setText("CREDITOS BANCARIOS  L.P");
 
@@ -2718,6 +2744,14 @@ public class Estados extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTCajaAb1ActionPerformed
 
+    private void TPC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TPC1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TPC1ActionPerformed
+
+    private void TPC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TPC2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TPC2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2747,6 +2781,7 @@ public class Estados extends javax.swing.JFrame {
             public void run() {
                 new Estados().setVisible(true);
             }
+           
         });
     }
 
@@ -2775,7 +2810,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField P2;
     private javax.swing.JTextField PAB;
     private javax.swing.JTextField PEL;
-    private javax.swing.JTextField PT1;
+    public javax.swing.JTextField PT1;
     private javax.swing.JTextField PT2;
     private javax.swing.JTextField PTABS;
     private javax.swing.JTextField PTREL;
@@ -2783,11 +2818,11 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField SPC1;
     private javax.swing.JTextField SPC2;
     private javax.swing.JTextField SPCABS;
-    private javax.swing.JTextField TCC1;
+    public javax.swing.JTextField TCC1;
     private javax.swing.JTextField TCC2;
     private javax.swing.JTextField TCCABS;
     private javax.swing.JTextField TCCREL;
-    private javax.swing.JTextField TPC1;
+    public javax.swing.JTextField TPC1;
     private javax.swing.JTextField TPC2;
     private javax.swing.JTextField TPCABS;
     private javax.swing.JTextField TPCREL;
@@ -2913,7 +2948,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTAFRel1;
     private javax.swing.JTextField jTAFijo1;
     private javax.swing.JTextField jTAFijo2;
-    private javax.swing.JTextField jTAT1;
+    public javax.swing.JTextField jTAT1;
     private javax.swing.JTextField jTATABS;
     private javax.swing.JTextField jTATP1;
     private javax.swing.JTextField jTATP2;
@@ -2936,7 +2971,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTDepAbso1;
     private javax.swing.JTextField jTDepRel;
     private javax.swing.JTextField jTDepRel1;
-    private javax.swing.JTextField jTInventarios1;
+    public javax.swing.JTextField jTInventarios1;
     private javax.swing.JTextField jTInventarios2;
     private javax.swing.JTextField jTInventariosAbso;
     private javax.swing.JTextField jTInventariosAbso1;
@@ -2958,7 +2993,7 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JTextField jTTCRel;
     private javax.swing.JTextField jTTCRel1;
     private javax.swing.JTextField jTTotalCir2;
-    private javax.swing.JTextField jTTotalCirc1;
+    public javax.swing.JTextField jTTotalCirc1;
     private javax.swing.JTextField jTextField100;
     private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField30;
