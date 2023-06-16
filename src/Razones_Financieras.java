@@ -42,7 +42,7 @@ double caja1, caja2, caja3, caja4, total;
         imp = String.format("%.2f",total);
         PCC14.setText(imp);
         //Capitalizacion a largo plazo
-        //deuda activo total
+        //deuda activo total   
         tcc1=Double.parseDouble(estados.jTAT1.getText());
         tcc2=Double.parseDouble(estados.PT1.getText());
         total = tcc2 / tcc1;
