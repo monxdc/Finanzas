@@ -1,4 +1,4 @@
-import java.io.*;
+//import java.io.*;
 public class Estados extends javax.swing.JFrame {
 
    public void aumentos(){
