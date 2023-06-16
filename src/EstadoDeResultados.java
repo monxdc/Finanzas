@@ -110,195 +110,195 @@ public class EstadoDeResultados extends javax.swing.JFrame {
         //Porcientos integrales costo de ventas 2014
         caja1 = Double.parseDouble(CV14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 - caja1;
-        imp = String.valueOf(total);
-        PIVN14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f", total);
+        PIVN14.setText(imp + "%");
         //Porcientos integrales costo de ventas 2013
         caja1 = Double.parseDouble(CV13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 - caja1;
-        imp = String.valueOf(total);
-        PIVN13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f", total);
+        PIVN13.setText(imp + "%");
         //Porcientos integrales margen bruto 2014
         caja1 = Double.parseDouble(MB14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMB14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f", total);
+        PIMB14.setText(imp + "%");
         //Porcientos integrales margen bruto 2013
         caja1 = Double.parseDouble(MB13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMB13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f", total);
+        PIMB13.setText(imp + "%");
         //Porcientos integrales gasto de ventas 2014
         caja1 = Double.parseDouble(GV14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIGV14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIGV14.setText(imp + "%");
         //Porcientos integrales gasto de ventas 2013
         caja1 = Double.parseDouble(GV13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIGV13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIGV13.setText(imp + "%");
         //Porcientos integrales gasto de admon 2014
         caja1 = Double.parseDouble(GA14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIGA14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIGA14.setText(imp + "%");
         //Porcientos integrales gasto de admon 2013
         caja1 = Double.parseDouble(GA13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIGA13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIGA13.setText(imp + "%");
         //Porcientos integrales total gastos de operacion 2014
         caja1 = Double.parseDouble(TGO14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PITGO14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PITGO14.setText(imp + "%");
         //Porcientos integrales total gastos de operacion 2013
         caja1 = Double.parseDouble(TGO13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PITGO13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PITGO13.setText(imp + "%");
         //Porcientos integrales margen de operacion 2014
         caja1 = Double.parseDouble(MO14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMO14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIMO14.setText(imp + "%");
         //Porcientos integrales margen de operacion 2013
         caja1 = Double.parseDouble(MO13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMO13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIMO13.setText(imp + "%");
         //Porcientos integrales costo integral de finan 2014
         caja1 = Double.parseDouble(CIF14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PICIF14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PICIF14.setText(imp + "%");
         //Porcientos integrales costo integral de finan 2013
         caja1 = Double.parseDouble(CIF13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PICIF13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PICIF13.setText(imp + "%");
         //Porcientos integrales intereses 2014
         caja1 = Double.parseDouble(I14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PII14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PII14.setText(imp + "%");
         //Porcientos integralesintereses 2013
         caja1 = Double.parseDouble(I13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PII13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PII13.setText(imp + "%");
         //Porcientos integrales utilidad perdida en cambios 2014
         caja1 = Double.parseDouble(UPC14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIUPC14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIUPC14.setText(imp + "%");
         //Porcientos integrales utilidad perdida en cambios 2013
         caja1 = Double.parseDouble(UPC13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIUPC13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIUPC13.setText(imp + "%");
         //Porcientos integrales repomo 2014
         caja1 = Double.parseDouble(R14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIR14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIR14.setText(imp + "%");
         //Porcientos integrales repomo 2013
         caja1 = Double.parseDouble(R13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIR13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIR13.setText(imp + "%");
         //Porcientos integrales total de cfi 2014
         caja1 = Double.parseDouble(TCFI14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PITCFI14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PITCFI14.setText(imp + "%");
         //Porcientos integrales total de cfi 2013
         caja1 = Double.parseDouble(TCFI13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PITCFI13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PITCFI13.setText(imp + "%");
         //Porcientos integrales MARGEN ANTES DE I.S.R. Y P.T.U. 2014
         caja1 = Double.parseDouble(MADISRYPTU14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMADISRYPTU14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIMADISRYPTU14.setText(imp + "%");
         //Porcientos integrales MARGEN ANTES DE I.S.R. Y P.T.U. 2013
         caja1 = Double.parseDouble(MADISRYPTU13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIMADISRYPTU13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIMADISRYPTU13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA I.S.R. 2014
         caja1 = Double.parseDouble(PPISR14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPISR14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPISR14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA I.S.R. 2013
         caja1 = Double.parseDouble(PPISR13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPISR13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPISR13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA P.T.U. 2014
         caja1 = Double.parseDouble(PPTU14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPPTU14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPPTU14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA P.T.U. 2013
         caja1 = Double.parseDouble(PPTU13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPPTU13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPPTU13.setText(imp + "%");
         //Porcientos integrales PROVISION PARA IMPAC. 2014
         caja1 = Double.parseDouble(PPIMPAC14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPIMPAC14.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPIMPAC14.setText(imp + "%");
         //Porcientos integrales PROVISION PARA IMPAC. 2013
         caja1 = Double.parseDouble(PPIMPAC13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIPPIMPAC13.setText(imp);
-        //Porcientos integrales PROVISION PARA IMPAC. 2014
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIPPIMPAC13.setText(imp + "%");
+        //Porcientos integrales utilidad neta 2014
         caja1 = Double.parseDouble(UN14.getText());
         caja2 = Double.parseDouble(VN14.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIUN14.setText(imp);
-        //Porcientos integrales PROVISION PARA IMPAC. 2013
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIUN14.setText(imp + "%");
+        //Porcientos integrales utilidad neta 2013
         caja1 = Double.parseDouble(UN13.getText());
         caja2 = Double.parseDouble(VN13.getText());
-        total = caja2 / caja1;
-        imp = String.valueOf(total);
-        PIUN13.setText(imp);
+        total = (caja2 / caja1)*100;
+        imp = String.format("%.2f",total);
+        PIUN13.setText(imp + "%");
     }
 
     /**
