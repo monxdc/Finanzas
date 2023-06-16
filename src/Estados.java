@@ -132,6 +132,14 @@ public class Estados extends javax.swing.JFrame {
        double activotota2=activoCir2+actFijo2+pa2;
        imp=String.valueOf(activotota2);
        jAT2.setText(imp);
+       //Nomina Absoluta Total Activo 
+      double taAb=(activotota1-activotota2);
+      String taAbsoluta=String.valueOf(taAb);
+      jTATABS.setText(taAbsoluta);
+      //Nomina Relativa 
+      double taRel=(taAb/activotota2)*100;
+      imp = String.format("%.2f",taRel);
+       jTATREL.setText(imp+"%");
        //Nomina Absoluta pROVEEDORES
        double p1,p2;
       p1=Double.parseDouble(P1.getText());
@@ -162,14 +170,156 @@ public class Estados extends javax.swing.JFrame {
       cb2=Double.parseDouble(CB2.getText());
       double cbAb=(cb1-cb2);
       String cbAbsoluta=String.valueOf(cbAb);
-      ADABS.setText(cbAbsoluta);
+      CBABS.setText(cbAbsoluta);
       // Nomina Relativa IPE
       
       double cbReal=(cbAb/cb2)*100;
        imp = String.format("%.2f",cbReal);
-       ADREL.setText(imp+"%");
+       CBREL.setText(imp+"%");
+       
+         //Nomina Absoluta IP
+       double ip1,ip2;
+      ip1=Double.parseDouble(IP1.getText());
+      ip2=Double.parseDouble(IP2.getText());
+      double ipAb=(ip1-ip2);
+      String ipAbsoluta=String.valueOf(ipAb);
+      IPABS.setText(ipAbsoluta);
+      // Nomina Relativa IPE
       
+      double ipReal=(ipAb/ip2)*100;
+       imp = String.format("%.2f",ipReal);
+       IPREL.setText(imp+"%");
+       /*TOTAL PASIVO CIRCULANTE 1*/
+       double tpc=p1+ad1+cb1+ip1;
+       imp=String.valueOf(tpc);
+       TPC1.setText(imp);
+       /*TOTAL PASIVO CIRCULANTE 2*/
+       double tpc2=p2+ad2+cb2+ip2;
+       imp=String.valueOf(tpc2);
+       TPC2.setText(imp);
+       
+       //Nomina Absoluta Total Activo 
+      double tpcAb=(tpc-tpc2);
+      String tpcAbsoluta=String.valueOf(tpcAb);
+      TPCABS.setText(tpcAbsoluta);
+      //Nomina Relativa 
+      double tpcRel=(tpcAb/tpc2)*100;
+      imp = String.format("%.2f",tpcRel);
+       TPCREL.setText(imp+"%");
+       
+       //Nomina Absoluta IP
+       double cblp1,cblp2;
+      cblp1=Double.parseDouble(CBLP1.getText());
+      cblp2=Double.parseDouble(CBLP2.getText());
+      double cblpAb=(cblp1-cblp2);
+      String cblpAbsoluta=String.valueOf(cblpAb);
+      CBLPABS.setText(cblpAbsoluta);
+      // Nomina Relativa IPE
       
+      double cblpReal=(cblpAb/cblp2)*100;
+       imp = String.format("%.2f",cblpReal);
+       CBLPREL.setText(imp+"%");
+       
+       /*TOTAL PASIVO total 1*/
+       double pt=tpc+cblp1;
+       imp=String.valueOf(pt);
+       PT1.setText(imp);
+       /*TOTAL PASIVO CIRCULANTE 2*/
+       double pt2=tpc2+cblp2;
+       imp=String.valueOf(pt2);
+       PT2.setText(imp);
+       
+       //Nomina Absoluta PASIVO TOTAL 
+      double ptAb=(pt-pt2);
+      String ptAbsoluta=String.valueOf(ptAb);
+      PTABS.setText(ptAbsoluta);
+      //Nomina Relativa 
+      double ptRel=(ptAb/pt2)*100;
+      imp = String.format("%.2f",ptRel);
+       PTREL.setText(imp+"%");
+       
+       
+       //Nomina Absoluta Capitsl social 
+       double cs1,cs2;
+      cs1=Double.parseDouble(CS1.getText());
+      cs2=Double.parseDouble(CS2.getText());
+      double csAb=(cs1-cs2);
+      String csAbsoluta=String.valueOf(csAb);
+      CSABS.setText(csAbsoluta);
+      // Nomina Relativa IPE
+
+      double csReal=(csAb/cs2)*100;
+       imp = String.format("%.2f",csReal);
+       CSREL.setText(imp+"%");
+       
+       
+       
+      
+      //Nomina Absoluta Capitsl social 
+       double ua1,ua2;
+      ua1=Double.parseDouble(UTA1.getText());
+      ua2=Double.parseDouble(UTA2.getText());
+      double uaAb=(ua1-ua2);
+      String uaAbsoluta=String.valueOf(uaAb);
+      UTAABS.setText(uaAbsoluta);
+      // Nomina Relativa IPE
+
+      double uaReal=(uaAb/ua2)*100;
+       imp = String.format("%.2f",uaReal);
+       UTAREL.setText(imp+"%");
+       
+       //Nomina Absoluta Capitsl social 
+       double ue1,ue2;
+      ue1=Double.parseDouble(UTE1.getText());
+      ue2=Double.parseDouble(UTE2.getText());
+      double ueAb=(ue1-ue2);
+      String ueAbsoluta=String.valueOf(ueAb);
+      UTEABS.setText(ueAbsoluta);
+      // Nomina Relativa IPE
+
+      double ueReal=(ueAb/ue2)*100;
+       imp = String.format("%.2f",ueReal);
+       UTEREL.setText(imp+"%");
+       
+       /*CAPITAL CONTABLE */
+       double capital1 = cs1 + ua1 + ue1;
+       String cc1 = String.valueOf(capital1);
+       TCC1.setText(cc1);
+
+       double capita2 = cs2 + ua2 + ue2;
+       String cc2 = String.valueOf(capita2);
+       TCC2.setText(cc2);
+       
+       //Nomina Absoluta PASIVO TOTAL 
+      double ccAb=(capital1-capita2);
+      String ccAbsoluta=String.valueOf(ccAb);
+      TCCABS.setText(ccAbsoluta);
+      //Nomina Relativa 
+      double ccRel=(ccAb/capita2)*100;
+      imp = String.format("%.2f",ccRel);
+       TCCREL.setText(imp+"%");
+       
+       /*SUMA PASIVO total MAS CAPITAL contable 1*/
+       double spc=pt+capital1;
+       String spc1 = String.valueOf(spc);
+       SPC1.setText(spc1);
+       /*2*/
+       double spc2=pt2+capita2;
+       String spc22 = String.valueOf(spc2);
+       SPC2.setText(spc22);
+       
+       double smcAb=(capital1-capita2);
+      String smcAbsoluta=String.valueOf(smcAb);
+      SPCABS.setText(smcAbsoluta);
+      //Nomina Relativa 
+      double smcRel=(ccAb/capita2)*100;
+      imp = String.format("%.2f",smcRel);
+       SMCREL.setText(imp+"%");
+       
+       
+       
+       
+    
       /*-------------------------------PORCIENTOS INTEGRALES-----------*/
       /*CLIENTE 2013 = PERIODO 1/ACTIVOTOTAL*/
       //double 
@@ -196,7 +346,9 @@ public class Estados extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -204,6 +356,7 @@ public class Estados extends javax.swing.JFrame {
         jPanel10 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
         jTextField29 = new javax.swing.JTextField();
         jTextField30 = new javax.swing.JTextField();
         jPanel27 = new javax.swing.JPanel();
@@ -227,7 +380,9 @@ public class Estados extends javax.swing.JFrame {
         jTInventariosAbso = new javax.swing.JTextField();
         jTInventariosRel = new javax.swing.JTextField();
         jPanel50 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel51 = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
         jPanel48 = new javax.swing.JPanel();
         jTTCAbso = new javax.swing.JTextField();
         jTTCRel = new javax.swing.JTextField();
@@ -366,7 +521,9 @@ public class Estados extends javax.swing.JFrame {
         SPC1 = new javax.swing.JTextField();
         SPC2 = new javax.swing.JTextField();
         jPanel59 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
         jPanel61 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
         jPanel62 = new javax.swing.JPanel();
         jTCajaAb1 = new javax.swing.JTextField();
         jTCajaRe1 = new javax.swing.JTextField();
@@ -468,26 +625,42 @@ public class Estados extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 153));
 
+        jLabel29.setText("RUBROS");
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 112, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel29)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel29)
+                .addContainerGap())
         );
+
+        jLabel31.setText("31-12-13");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 116, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(51, Short.MAX_VALUE)
+                .addComponent(jLabel31)
+                .addGap(22, 22, 22))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 35, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(13, Short.MAX_VALUE)
+                .addComponent(jLabel31)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -556,15 +729,23 @@ public class Estados extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        jLabel33.setText("NOMINA RELATIVA");
+
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel33)
+                .addGap(26, 26, 26))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 35, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel33)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTextField29.setText("jTextField29");
@@ -711,26 +892,42 @@ public class Estados extends javax.swing.JFrame {
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
+        jLabel30.setText("31-12-14");
+
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
         jPanel50.setLayout(jPanel50Layout);
         jPanel50Layout.setHorizontalGroup(
             jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(jPanel50Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel30)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         jPanel50Layout.setVerticalGroup(
             jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel50Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel30)
+                .addContainerGap())
         );
+
+        jLabel32.setText("NOMINA ABSOLUTA");
 
         javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
         jPanel51.setLayout(jPanel51Layout);
         jPanel51Layout.setHorizontalGroup(
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(jPanel51Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel32)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel51Layout.setVerticalGroup(
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel51Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel32)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel48.setBackground(new java.awt.Color(204, 153, 0));
@@ -1788,6 +1985,8 @@ public class Estados extends javax.swing.JFrame {
 
         UTE1.setText("2156");
 
+        UTE2.setText("381");
+
         jPanel37.setBackground(new java.awt.Color(255, 102, 102));
 
         jLabel27.setText("TOTAL CAPITAL CONTABLE");
@@ -1874,26 +2073,42 @@ public class Estados extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
+        jLabel34.setText("2014%");
+
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
         jPanel59Layout.setHorizontalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 122, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel59Layout.createSequentialGroup()
+                .addContainerGap(51, Short.MAX_VALUE)
+                .addComponent(jLabel34)
+                .addGap(28, 28, 28))
         );
         jPanel59Layout.setVerticalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 35, Short.MAX_VALUE)
+            .addGroup(jPanel59Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel34)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jLabel35.setText("2013%");
 
         javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
         jPanel61.setLayout(jPanel61Layout);
         jPanel61Layout.setHorizontalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(jPanel61Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel35)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel61Layout.setVerticalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel61Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel35)
+                .addContainerGap())
         );
 
         jPanel62.setBackground(new java.awt.Color(255, 153, 102));
@@ -2027,7 +2242,7 @@ public class Estados extends javax.swing.JFrame {
                 .addComponent(jTPAP1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTPAP2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel66Layout.setVerticalGroup(
             jPanel66Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2243,42 +2458,46 @@ public class Estados extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(41, 41, 41)
-                                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(235, 235, 235)
-                                            .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(27, 27, 27)
-                                            .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jPanel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addGap(6, 6, 6)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(74, 74, 74)
-                                                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(jPanel69, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jPanel70, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(41, 41, 41)
+                                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(79, 79, 79)
+                                                .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(30, 30, 30)
+                                                .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(jPanel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(6, 6, 6)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addGap(74, 74, 74)
+                                                        .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(jPanel58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(jPanel69, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(jPanel70, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addGap(29, 29, 29)))))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jTextField35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE)
@@ -2299,8 +2518,6 @@ public class Estados extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2605,7 +2822,14 @@ public class Estados extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
